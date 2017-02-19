@@ -1,6 +1,9 @@
 # system.prop for msm8952_32
 #
 
+# Device
+ro.product.model=Moto 4G Plus
+
 # Radio
 rild.libpath=/system/vendor/lib/libril-qc-qmi-1.so
 rild.libargs=-d /dev/smd0
