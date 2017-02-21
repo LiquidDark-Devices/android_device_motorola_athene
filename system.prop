@@ -2,7 +2,7 @@
 #
 
 # Device
-ro.product.model=Moto 4G Plus
+ro.product.model=Moto G4 Plus
 
 # Radio
 rild.libpath=/system/vendor/lib/libril-qc-qmi-1.so
