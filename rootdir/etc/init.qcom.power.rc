@@ -15,9 +15,12 @@ on boot
     write /dev/cpuset/top-app/cpus 0-7
     write /dev/cpuset/camera-daemon/cpus 4-7
 
-    # Enable sched boost
-    write /proc/sys/kernel/sched_boost 1
+on early-init
+    write /sys/block/mmcblk0/bdi/read_ahead_kb 1536  
 
+# Enable sched boost
+    write /proc/sys/kernel/sched_boost 1
+    
 on enable-low-power
     # HMP scheduler settings
     write /proc/sys/kernel/sched_window_stats_policy 3
